@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [XXXX系统测试套件]">
+  <listeners>
+    <listener class-name="com.xul.config.ExtentTestNGIReporterListener"/>
+  </listeners>
+  <test thread-count="5" verbose="0" name="XXXX系统测试用例(failed)">
+    <classes>
+      <class name="com.xul.cases.UpdateUserInfoTest">
+        <methods>
+          <include name="updateUserInfo"/>
+          <include name="deleteUser"/>
+        </methods>
+      </class> <!-- com.xul.cases.UpdateUserInfoTest -->
+      <class name="com.xul.cases.LoginTest">
+        <methods>
+          <include name="loginTrue"/>
+          <include name="loginFalse"/>
+          <include name="beforeTest"/>
+        </methods>
+      </class> <!-- com.xul.cases.LoginTest -->
+      <class name="com.xul.cases.AddUserTest">
+        <methods>
+          <include name="addUser"/>
+        </methods>
+      </class> <!-- com.xul.cases.AddUserTest -->
+      <class name="com.xul.cases.GetUserInfoListTest">
+        <methods>
+          <include name="getUserListInfo"/>
+        </methods>
+      </class> <!-- com.xul.cases.GetUserInfoListTest -->
+      <class name="com.xul.cases.GetUserInfoTest">
+        <methods>
+          <include name="getUserInfo"/>
+        </methods>
+      </class> <!-- com.xul.cases.GetUserInfoTest -->
+    </classes>
+  </test> <!-- XXXX系统测试用例(failed) -->
+</suite> <!-- Failed suite [XXXX系统测试套件] -->

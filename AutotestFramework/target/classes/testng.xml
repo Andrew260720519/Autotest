@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+
+
+<suite name="XXXX系统测试套件">
+
+    <test name="XXXX系统测试用例">
+        <classes>
+            <class name="com.xul.cases.LoginTest">
+                <methods>
+                    <include name="loginTrue"/>
+                    <include name="loginFalse"/>
+                </methods>
+            </class>
+
+            <class name="com.xul.cases.AddUserTest">
+                <methods>
+                    <include name="addUser"/>
+                </methods>
+            </class>
+
+            <class name="com.xul.cases.GetUserInfoTest">
+                <methods>
+                    <include name="getUserInfo"/>
+                </methods>
+            </class>
+
+            <class name="com.xul.cases.UpdateUserInfoTest">
+                <methods>
+                    <include name="updateUserInfo"/>
+                    <include name="deleteUser"/>
+                </methods>
+            </class>
+
+            <class name="com.xul.cases.GetUserInfoListTest">
+                <methods>
+                    <include name="getUserListInfo"/>
+                </methods>
+            </class>
+        </classes>
+    </test>
+
+    <listeners>
+        <listener class-name="com.xul.config.ExtentTestNGIReporterListener" />
+    </listeners>
+</suite>
